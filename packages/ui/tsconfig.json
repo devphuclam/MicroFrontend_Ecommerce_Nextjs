@@ -2,15 +2,6 @@
   "extends": "@repo/typescript-config/react-library.json",
   "compilerOptions": {
     "outDir": "dist",
-    "target": "ES2020",
-    "module": "ESNext", // quan trọng để import SVG
-    "moduleResolution": "Node",
-    "esModuleInterop": true,
-    "allowJs": true,
-    "jsx": "react-jsx",
-    "strict": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
   },
   "include": [
     "src",
