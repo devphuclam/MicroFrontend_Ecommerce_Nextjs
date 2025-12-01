@@ -1,0 +1,24 @@
+.login-page-container {
+    display: flex;
+    flex-direction: row;
+
+    .form-section {
+        flex: 1.5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .form-header-section {
+            flex-direction: column;
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+    }
+
+    .illustration-section {
+        flex: 1;
+        object-fit: fill;
+    }
+}

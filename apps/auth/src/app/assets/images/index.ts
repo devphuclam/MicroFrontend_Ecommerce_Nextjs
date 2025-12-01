@@ -1,0 +1,1 @@
+export { IllustrationImage } from './IllustrationImage'
