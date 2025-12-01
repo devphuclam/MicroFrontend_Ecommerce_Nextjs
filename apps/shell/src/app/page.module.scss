@@ -6,6 +6,8 @@
   .hero {
     width: 100%;
     height: 110vh; // bạn có thể chỉnh 70vh, 100vh…
+    padding: 1vw 10vw;
+    gap: 2vh;
 
     background-image: url('/images/HomeIllustration.png');
     background-size: cover; // Cho hình fill toàn bộ
@@ -13,7 +15,38 @@
     background-repeat: no-repeat; // Không lặp
 
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+    .heroText {
+      color: white;
+      font-weight: 400;
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+    .heroButton {
+      font-weight: 600;
+      border-radius: 0;
+    }
+  }
+
+  .offerSection {
+    display: flex;
+    flex-direction: column;
+    .promotionQuote {
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+      padding: 1.5vw 6vw;
+    }
+    .banners {
+      display: flex;
+      flex-direction: row;
+      padding: 1.5vw 3vw;
+      gap: 1rem;
+    }
+  }
+
+  .sampleProductSection {
   }
 }
