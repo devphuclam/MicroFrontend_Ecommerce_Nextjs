@@ -1,12 +1,11 @@
-import Image from 'next/image';
-import styles from './page.module.scss';
+import style from './page.module.scss';
 import NavBar from '@repo/ui/NavBar';
 
 export default function HomePage() {
   return (
-    <div>
-      <NavBar />
-      <div>Hello shell zone</div>
+    <div className={style.homepageContainer}>
+      <NavBar message='Complimentary U.S. No-Rush Shipping on orders of $95 or more. Shop now' />
+      <div className={style.hero}></div>
     </div>
   );
 }

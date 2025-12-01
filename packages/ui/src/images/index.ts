@@ -1,0 +1,1 @@
+export { FittoryLogo } from './FittoryLogo';
