@@ -1,8 +1,11 @@
+'use client';
 import style from './page.module.scss';
 import NavBar from '@repo/ui/NavBar';
 import BannerCard from '@/components/BannerCard/BannerCard';
+import ProductCard from '@/components/ProductCard/ProductCard';
 import { IMAGES } from '../../public/images';
 import { Button } from 'antd';
+import { SAMPLE_PRODUCTS } from '@repo/ui/data/sample-product.ts';
 
 export default function HomePage() {
   return (
@@ -30,7 +33,22 @@ export default function HomePage() {
         </div>
       </div>
       {/* Sample Product Section */}
-      <div className={style.sampleProductSection}></div>
+      <div className={style.sampleProductSection}>
+        <p className={style.quote}>What to Wear Now</p>
+        <div className={style.sampleProducts}>
+          {SAMPLE_PRODUCTS.map((product) => {
+            return (
+              <ProductCard
+                key={product.id}
+                name={product.name}
+                image={product.image}
+                price={product.price}
+              />
+            );
+          })}
+        </div>
+      </div>
+      {/*  */}
     </div>
   );
 }

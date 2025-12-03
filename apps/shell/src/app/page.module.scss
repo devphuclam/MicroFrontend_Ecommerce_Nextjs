@@ -37,7 +37,7 @@
     .promotionQuote {
       font-size: 1.125rem;
       line-height: 1.5rem;
-      padding: 1.5vw 6vw;
+      padding: 1.5vw 5vw;
     }
     .banners {
       display: flex;
@@ -48,5 +48,20 @@
   }
 
   .sampleProductSection {
+    display: flex;
+    flex-direction: column;
+
+    .quote {
+      font-size: 1.125rem;
+      font-weight: 600;
+      line-height: 1.5rem;
+      padding: 1.5vw 5vw;
+    }
+    .sampleProducts {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 1.5vw 3vw;
+    }
   }
 }
