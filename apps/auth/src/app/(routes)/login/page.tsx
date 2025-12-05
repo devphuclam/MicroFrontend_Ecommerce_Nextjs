@@ -21,7 +21,7 @@ export default function LoginPage() {
                     </div>
                     <div className="form-input-section">
                         <InputWithTagName tagName="Email" variant="outlined" size="large" placeholder="Enter your Email" style={{ padding: "1rem", boxShadow: ' 5 5 5', height: "3vw", fontSize: '1rem' }} />
-                        <InputWithTagName tagName="Password" type="password" variant="outlined" size="large" style={{ padding: "1rem", boxShadow: ' 5 5 5', height: "3vw", fontSize: "1rem" }} />
+                        <InputWithTagName tagName="Password" type="password" variant="outlined" size="large" placeholder="******" style={{ padding: "1rem", boxShadow: ' 5 5 5', height: "3vw", fontSize: "1rem" }} />
                     </div>
                     <div className="form-options-section">
                         <Checkbox style={{ fontSize: "1rem", color: "#181818", lineHeight: "100%", fontWeight: "600" }}>Remember me</Checkbox>
