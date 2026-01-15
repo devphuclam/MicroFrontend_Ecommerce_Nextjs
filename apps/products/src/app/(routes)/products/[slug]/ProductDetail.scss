@@ -1,0 +1,99 @@
+.product-detail-container {
+  align-items: flex-start;
+
+  .product-detail-mainconent {
+    padding: 2vw 5vw;
+    border: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 64px;
+
+    .product-svg {
+      width: 500px;
+      height: 500px;
+      margin-bottom: 20px;
+      flex-shrink: 0;
+    }
+    .product-detail-info {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 420px;
+      min-width: 420px;
+
+      /* TITLE */
+      .product-detail-name {
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 1.2;
+      }
+
+      /* PRICE */
+      .product-detail-price {
+        font-size: 18px;
+        font-weight: 500;
+      }
+
+      /* DESCRIPTION */
+      .product-description {
+        font-size: 14px;
+        color: #555;
+        line-height: 1.6;
+      }
+      // Variant Segmented Control
+      .variant-segmented {
+        width: fit-content;
+
+        .ant-segmented-item {
+          padding: 6px 16px;
+          font-size: 13px;
+        }
+
+        .ant-segmented-item-selected {
+          background-color: #000 !important;
+          color: #fff !important;
+        }
+      }
+      /* ADD TO CART */
+      .ant-btn-primary {
+        background-color: #000 !important;
+        border-color: #000 !important;
+        color: #fff !important;
+
+        &:hover {
+          background-color: #222 !important;
+          border-color: #222 !important;
+        }
+
+        &:active {
+          background-color: #fff !important;
+          color: #000 !important;
+        }
+      }
+
+      /* ACCORDION */
+      .product-accordion {
+        margin-top: 24px;
+
+        .ant-collapse-item {
+          border-bottom: 1px solid #e5e5e5;
+        }
+
+        .ant-collapse-header {
+          font-size: 14px;
+          font-weight: 500;
+          padding: 12px 0 !important;
+        }
+
+        .ant-collapse-content-box {
+          padding: 0 0 16px 0 !important;
+          font-size: 13px;
+          color: #555;
+          line-height: 1.6;
+          overflow-y: auto;
+        }
+      }
+    }
+  }
+}

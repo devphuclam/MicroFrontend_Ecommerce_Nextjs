@@ -22,7 +22,11 @@ const NavBar = ({ message, storeUrl, accountUrl, cartUrl }: NavBarProps) => {
 
       <div className='navbar-bottom'>
         {/* LEFT — Logo */}
-        <div className='navbar-left'>
+        <div
+          className='navbar-left'
+          onClick={() => window.location.assign('http://localhost:3000')}
+          style={{ cursor: 'pointer' }}
+        >
           <FittoryLogo width={120} height={'100%'} />
         </div>
 
@@ -42,11 +46,16 @@ const NavBar = ({ message, storeUrl, accountUrl, cartUrl }: NavBarProps) => {
           </div>
           <div
             className='navbar-item'
-            onClick={() => window.location.assign(cartUrl || '/cart')}
+            onClick={() => window.location.assign('http://localhost:3001/cart')}
           >
             Cart
           </div>
-          <div className='navbar-item'>About Us</div>
+          <div
+            className='navbar-item'
+            onClick={() => window.location.assign(cartUrl || '/cart')}
+          >
+            Order
+          </div>
         </div>
 
         {/* RIGHT — Search */}

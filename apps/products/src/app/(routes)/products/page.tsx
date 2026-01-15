@@ -33,7 +33,12 @@ export default function ProductPage() {
 
   return (
     <div className='products-container'>
-      <NavBar message='Complimentary U.S. No-Rush Shipping on orders of $95 or more. Shop now' />
+      <NavBar
+        message='Complimentary U.S. No-Rush Shipping on orders of $95 or more. Shop now'
+        storeUrl='http://localhost:3001/products'
+        accountUrl='http://localhost:3003/login'
+        cartUrl='http://localhost:3002/'
+      />
       {/* Sort Section */}
       <div className='products-sort'>
         <Select
@@ -51,6 +56,27 @@ export default function ProductPage() {
             name={product.name}
             image={product.image}
             price={product.price}
+            onClick={() => {
+              window.location.assign(
+                `http://localhost:3001/products/${product.slug}`
+              );
+            }}
+          />
+        ))}
+      </div>
+      {/* Product Section */}
+      <div className='products-grid'>
+        {sortedProducts.map((product) => (
+          <ProductCard
+            key={product.id}
+            name={product.name}
+            image={product.image}
+            price={product.price}
+            onClick={() => {
+              window.location.assign(
+                `http://localhost:3001/products/${product.slug}`
+              );
+            }}
           />
         ))}
       </div>
