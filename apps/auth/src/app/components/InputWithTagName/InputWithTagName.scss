@@ -1,7 +1,15 @@
-.input-tagname {
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    text-indent: 0.5rem;
-    display: block;
+.input-with-tagname-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    .input-tagname {
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+
+    input {
+        width: 100%;
+    }
 }
