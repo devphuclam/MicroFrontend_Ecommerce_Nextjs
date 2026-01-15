@@ -79,7 +79,14 @@ export default function ProductDetail() {
           </div>
 
           {/* ADD TO CART */}
-          <Button type='primary' block size='large'>
+          <Button
+            type='primary'
+            block
+            size='large'
+            onClick={() => {
+              window.location.assign('http://localhost:3001/cart');
+            }}
+          >
             Add to Cart
           </Button>
 
