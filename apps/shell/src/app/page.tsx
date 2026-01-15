@@ -52,7 +52,7 @@ export default function HomePage() {
     <div className={style.homepageContainer}>
       <NavBar
         message='Complimentary U.S. No-Rush Shipping on orders of $95 or more. Shop now'
-        storeUrl='http://localhost:3001/'
+        storeUrl='http://localhost:3001/products'
         accountUrl='http://localhost:3003/login'
         cartUrl='http://localhost:3002/'
       />
