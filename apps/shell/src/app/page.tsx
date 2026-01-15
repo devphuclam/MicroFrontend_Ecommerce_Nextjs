@@ -1,6 +1,7 @@
 'use client';
 import style from './page.module.scss';
 import NavBar from '@repo/ui/NavBar';
+import Footer from '@repo/ui/Footer';
 import BannerCard from '@/components/BannerCard/BannerCard';
 import ProductCard from '@/components/ProductCard/ProductCard';
 import { IMAGES } from '../../public/images';
@@ -131,6 +132,8 @@ export default function HomePage() {
           })}
         </div>
       </div>
+      {/* Footer Section */}
+      <Footer />
     </div>
   );
 }
