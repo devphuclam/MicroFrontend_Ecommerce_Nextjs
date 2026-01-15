@@ -4,4 +4,5 @@ export type Product = {
   price: number;
   image: string | React.FC<React.SVGProps<SVGSVGElement>>;
   category?: string;
+  slug?: string;
 };

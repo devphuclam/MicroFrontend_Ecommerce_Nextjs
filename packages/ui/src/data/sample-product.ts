@@ -8,6 +8,7 @@ export const SAMPLE_PRODUCTS: Product[] = [
     price: 298,
     image: Tote,
     category: 'Tote',
+    slug: 'classic-easy-zipper-tote',
   },
   {
     id: 2,
@@ -15,6 +16,7 @@ export const SAMPLE_PRODUCTS: Product[] = [
     price: 248,
     image: Bag,
     category: 'Bag',
+    slug: 'concertina-phone-bag',
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ export const SAMPLE_PRODUCTS: Product[] = [
     price: 398,
     image: Coat,
     category: 'Coat',
+    slug: 'wool-cashmere-sweater-coat',
   },
   {
     id: 4,
@@ -29,6 +32,7 @@ export const SAMPLE_PRODUCTS: Product[] = [
     price: 98,
     image: Beanie,
     category: 'Beanie',
+    slug: 'single-origin-cashmere-beanie',
   },
   {
     id: 5,
@@ -36,5 +40,6 @@ export const SAMPLE_PRODUCTS: Product[] = [
     price: 248,
     image: Cardigan,
     category: 'Cardigan',
+    slug: 'alpaca-wool-cropped-cardigan',
   },
 ];
