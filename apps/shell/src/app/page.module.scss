@@ -64,9 +64,6 @@
       padding: 1.5vw 3vw;
     }
   }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
   .adSection {
     display: flex;
@@ -122,9 +119,10 @@
     .instaWrapper {
       position: relative;
       width: 100%;
-      aspect-ratio: 1;
+      aspect-ratio: 1 / 1;
       overflow: hidden;
       cursor: pointer;
+      border-radius: 4px;
 
       .instaImage {
         object-fit: cover;
@@ -166,10 +164,4 @@
       }
     }
   }
-=======
->>>>>>> parent of d387ce1 (HomePage +++)
-=======
->>>>>>> parent of d387ce1 (HomePage +++)
-=======
->>>>>>> parent of d387ce1 (HomePage +++)
 }
