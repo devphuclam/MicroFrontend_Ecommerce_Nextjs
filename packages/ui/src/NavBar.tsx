@@ -8,9 +8,12 @@ import { FittoryLogo } from './images';
 
 type NavBarProps = {
   message?: string;
+  storeUrl?: string;
+  accountUrl?: string;
+  cartUrl?: string;
 };
 
-const NavBar = ({ message }: NavBarProps) => {
+const NavBar = ({ message, storeUrl, accountUrl, cartUrl }: NavBarProps) => {
   return (
     <div className='navbar-container'>
       <div className='navbar-top'>
@@ -25,9 +28,24 @@ const NavBar = ({ message }: NavBarProps) => {
 
         {/* CENTER — Menu */}
         <div className='navbar-center'>
-          <div className='navbar-item'>Store</div>
-          <div className='navbar-item'>Account</div>
-          <div className='navbar-item'>Cart</div>
+          <div
+            className='navbar-item'
+            onClick={() => window.location.assign(storeUrl || '/products')}
+          >
+            Store
+          </div>
+          <div
+            className='navbar-item'
+            onClick={() => window.location.assign(accountUrl || '/auth')}
+          >
+            Account
+          </div>
+          <div
+            className='navbar-item'
+            onClick={() => window.location.assign(cartUrl || '/cart')}
+          >
+            Cart
+          </div>
           <div className='navbar-item'>About Us</div>
         </div>
 

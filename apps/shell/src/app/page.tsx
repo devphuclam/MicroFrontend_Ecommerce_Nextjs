@@ -50,7 +50,12 @@ export default function HomePage() {
   ];
   return (
     <div className={style.homepageContainer}>
-      <NavBar message='Complimentary U.S. No-Rush Shipping on orders of $95 or more. Shop now' />
+      <NavBar
+        message='Complimentary U.S. No-Rush Shipping on orders of $95 or more. Shop now'
+        storeUrl='http://localhost:3001/products'
+        accountUrl='http://localhost:3003/login'
+        cartUrl='http://localhost:3002/'
+      />
       {/* Hero Section */}
       <div className={style.hero}>
         <h1 className={style.heroText}>
@@ -83,6 +88,11 @@ export default function HomePage() {
                 name={product.name}
                 image={product.image}
                 price={product.price}
+                onClick={() => {
+                  window.location.assign(
+                    `http://localhost:3001/products/${product.slug}`
+                  );
+                }}
               />
             );
           })}

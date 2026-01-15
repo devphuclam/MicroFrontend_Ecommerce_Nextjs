@@ -1,0 +1,58 @@
+.banner-card-container {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+
+  cursor: pointer;
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+
+  /* Label góc trái dưới */
+  .banner-card-label {
+    z-index: 2;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    backdrop-filter: blur(5px);
+  }
+
+  /* Hover Effect */
+  &:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.25);
+
+    &::after {
+      opacity: 0.9;
+    }
+
+    .banner-card-label {
+      transform: translateY(0px);
+    }
+  }
+
+  /* Overlay gradient để chữ luôn nổi bật */
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 60%;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.2),
+      transparent
+    );
+    transition: opacity 0.4s ease;
+  }
+}

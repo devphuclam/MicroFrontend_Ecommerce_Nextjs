@@ -4,13 +4,13 @@
   font-family: 'Helvetica Neue', sans-serif;
 }
 
-.top {
+.footer-top {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 60px;
 }
 
-.column {
+.footer-column {
   h4 {
     font-size: 12px;
     font-weight: 600;
@@ -25,7 +25,7 @@
   }
 }
 
-.link {
+.footer-link {
   cursor: pointer;
 
   &:hover {
@@ -33,7 +33,7 @@
   }
 }
 
-.subscribe {
+.footer-subscribe {
   h4 {
     font-size: 18px;
     margin-bottom: 16px;
@@ -47,7 +47,7 @@
     font-size: 14px;
   }
 
-  .policy {
+  .footer-policy {
     font-size: 12px;
     color: #555;
     margin-bottom: 16px;
@@ -72,7 +72,7 @@
   }
 }
 
-.bottom {
+.footer-bottom {
   margin-top: 60px;
   font-size: 12px;
   color: #555;
