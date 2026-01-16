@@ -239,7 +239,14 @@ export default function CheckoutPage() {
 
         <div className='form-actions'>
           <Button onClick={onBack}>Back</Button>
-          <Button type='primary'>Pay ${total.toFixed(2)}</Button>
+          <Button
+            type='primary'
+            onClick={() => {
+              window.location.assign('http://localhost:3002/order-detail');
+            }}
+          >
+            Pay ${total.toFixed(2)}
+          </Button>
         </div>
       </>
     );
@@ -274,7 +281,7 @@ export default function CheckoutPage() {
         message='Complimentary U.S. No-Rush Shipping on orders of $95 or more. Shop now'
         storeUrl='http://localhost:3001/products'
         accountUrl='http://localhost:3003/login'
-        cartUrl='http://localhost:3002/checkout'
+        cartUrl='http://localhost:3002/order'
       />
 
       {/* Progress */}

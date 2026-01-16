@@ -1,0 +1,61 @@
+.order-page {
+  background: #fafafa;
+}
+
+.order-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+.order-header {
+  text-align: center;
+  margin-bottom: 32px;
+
+  svg {
+    font-size: 48px;
+    color: #52c41a;
+  }
+
+  h2 {
+    margin-top: 12px;
+  }
+
+  p {
+    color: #666;
+  }
+}
+
+.order-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+}
+
+.order-info,
+.order-summary {
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+}
+
+.info-block {
+  margin-bottom: 16px;
+
+  p {
+    margin: 2px 0;
+    color: #555;
+  }
+}
+
+.summary-row,
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.summary-total {
+  font-size: 18px;
+  font-weight: 600;
+}
