@@ -47,7 +47,7 @@ export default function OrderDetail() {
       <NavBar
         message='Thank you for your purchase!'
         storeUrl='http://localhost:3001/products'
-        accountUrl='http://localhost:3003/login'
+        accountUrl='http://localhost:3003/my-profile'
         cartUrl='http://localhost:3002/order'
       />
 

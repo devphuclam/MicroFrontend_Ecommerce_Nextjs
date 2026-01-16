@@ -98,7 +98,7 @@ export default function OrderPage() {
       <NavBar
         message='Your Orders'
         storeUrl='http://localhost:3001/products'
-        accountUrl='http://localhost:3003/login'
+        accountUrl='http://localhost:3003/my-profile'
         cartUrl='http://localhost:3002/order'
       />
 
