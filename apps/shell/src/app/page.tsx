@@ -53,7 +53,7 @@ export default function HomePage() {
       <NavBar
         message='Complimentary U.S. No-Rush Shipping on orders of $95 or more. Shop now'
         storeUrl='http://localhost:3001/products'
-        accountUrl='http://localhost:3003/login'
+        accountUrl='http://localhost:3003/my-profile'
         cartUrl='http://localhost:3002/order'
       />
       {/* Hero Section */}
