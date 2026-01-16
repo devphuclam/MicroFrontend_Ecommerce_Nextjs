@@ -20,9 +20,9 @@ export default function ForgotPasswordPage() {
                         <div style={{ fontSize: "1.25rem", fontWeight: '300', color: "#636364" }}>Don’t worry — we’ll help you get back in.</div>
                     </div>
                     <div className="form-input-section">
-                        <InputWithTagName tagName="Email" variant="outlined" size="large" placeholder="Enter your Email" style={{ padding: "1rem", boxShadow: ' 5 5 5', height: "3vw", fontSize: '1rem' }} />
-                        <InputWithTagName tagName="Password" type="password" variant="outlined" size="large" placeholder="******" style={{ padding: "1rem", boxShadow: ' 5 5 5', height: "3vw", fontSize: "1rem" }} />
-                        <InputWithTagName tagName="Confirm Password" type="password" variant="outlined" size="large" placeholder="******" style={{ padding: "1rem", boxShadow: ' 5 5 5', height: "3vw", fontSize: "1rem" }} />
+                        <InputWithTagName tagName="Email" variant="outlined" size="large" placeholder="Enter your Email" />
+                        <InputWithTagName tagName="Password" type="password" variant="outlined" size="large" placeholder="******" />
+                        <InputWithTagName tagName="Confirm Password" type="password" variant="outlined" size="large" placeholder="******" />
                     </div>
                     <div className="form-button-section">
                         <Button type="primary" size="large" variant="solid" color="danger" danger style={{ width: "100%", padding: "1.5rem", fontSize: "1.2rem", borderRadius: "20px" }}>Submit</Button>

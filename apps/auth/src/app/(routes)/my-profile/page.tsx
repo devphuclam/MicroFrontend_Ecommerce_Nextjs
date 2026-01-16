@@ -109,7 +109,11 @@ export default function MyProfilePage() {
                         placeholder="123 Street, Ward, District"
                     />
                 </div>
-
+                <Button
+                    type="primary"
+                    size="large"
+                    variant="solid"
+                    color="danger">Sign Out</Button>
             </div>
         </div>
     );
