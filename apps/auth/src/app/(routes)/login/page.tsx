@@ -20,8 +20,8 @@ export default function LoginPage() {
                         <div style={{ fontSize: "1.5rem", fontWeight: '300', color: "#636364" }}>Welcome Back! Please enter your details.</div>
                     </div>
                     <div className="form-input-section">
-                        <InputWithTagName tagName="Email" variant="outlined" size="large" placeholder="Enter your Email" style={{ padding: "1rem", boxShadow: ' 5 5 5', height: "3vw", fontSize: '1rem' }} />
-                        <InputWithTagName tagName="Password" type="password" variant="outlined" size="large" placeholder="******" style={{ padding: "1rem", boxShadow: ' 5 5 5', height: "3vw", fontSize: "1rem" }} />
+                        <InputWithTagName tagName="Email" variant="outlined" size="large" placeholder="Enter your Email" />
+                        <InputWithTagName tagName="Password" type="password" variant="outlined" size="large" placeholder="******" />
                     </div>
                     <div className="form-options-section">
                         <Checkbox style={{ fontSize: "1rem", color: "#181818", lineHeight: "100%", fontWeight: "600" }}>Remember me</Checkbox>
@@ -30,7 +30,7 @@ export default function LoginPage() {
                     <div className="form-button-section">
                         <Button type="primary" size="large" variant="solid" color="danger" danger style={{ width: "100%", padding: "1.5rem", fontSize: "1.2rem", borderRadius: "20px" }}>Sign in</Button>
                         <Button type="default" icon={<GoogleIcon width={24} height={24} />} size="large" variant="outlined" color="default" style={{ width: "100%", padding: "1.5rem", fontSize: "1.2rem", borderRadius: "20px", fontWeight: "600" }}>Sign in with Google</Button>
-                        <div style={{ fontSize: "0.8rem", color: "#636364", fontWeight: "500" }}>Don't have an account? <Button variant="link" color="danger" type="link" style={{ fontSize: "0.8rem", fontWeight: "600", padding: '0' }}>Sign up for free!</Button></div>
+                        <div style={{ fontSize: "0.8rem", color: "#636364", fontWeight: "500", flexDirection: "row", display: "flex", gap: "1rem", justifyContent: "center", alignItems: "center" }}>Don't have an account? <Button variant="link" color="danger" type="link" style={{ width: "30%" }}>Sign up for free!</Button></div>
                     </div>
 
 
