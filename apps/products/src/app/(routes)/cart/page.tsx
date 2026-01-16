@@ -55,7 +55,7 @@ export default function CartPage() {
         message='Complimentary U.S. No-Rush Shipping on orders of $95 or more. Shop now'
         storeUrl='http://localhost:3001/products'
         accountUrl='http://localhost:3003/login'
-        cartUrl='http://localhost:3002/checkout'
+        cartUrl='http://localhost:3002/order'
       />
       {/* Title */}
       <h2 className='cart-title'>Your Shopping Cart</h2>
