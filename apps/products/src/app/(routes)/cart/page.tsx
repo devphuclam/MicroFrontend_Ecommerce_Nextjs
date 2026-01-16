@@ -9,7 +9,7 @@ import CartCard, { CartItem } from '@/components/CartCard/CartCard';
 
 export default function CartPage() {
   const [cartItems, setCartItems] = useState<CartItem[]>(() =>
-    SAMPLE_PRODUCTS.slice(0, 2).map((p) => ({
+    SAMPLE_PRODUCTS.slice(0, 4).map((p) => ({
       id: p.id,
       name: p.name,
       price: p.price,
@@ -55,7 +55,7 @@ export default function CartPage() {
         message='Complimentary U.S. No-Rush Shipping on orders of $95 or more. Shop now'
         storeUrl='http://localhost:3001/products'
         accountUrl='http://localhost:3003/login'
-        cartUrl='http://localhost:3002/'
+        cartUrl='http://localhost:3002/checkout'
       />
       {/* Title */}
       <h2 className='cart-title'>Your Shopping Cart</h2>
@@ -94,7 +94,14 @@ export default function CartPage() {
             <span>${total}</span>
           </div>
 
-          <button className='checkout-btn'>Checkout</button>
+          <button
+            className='checkout-btn'
+            onClick={() => {
+              window.location.assign('http://localhost:3002/checkout');
+            }}
+          >
+            Checkout
+          </button>
         </div>
       </div>
 

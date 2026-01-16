@@ -46,7 +46,7 @@ export default function ProductDetail() {
         message='Complimentary U.S. No-Rush Shipping on orders of $95 or more. Shop now'
         storeUrl='http://localhost:3001/products'
         accountUrl='http://localhost:3003/login'
-        cartUrl='http://localhost:3002/'
+        cartUrl='http://localhost:3002/checkout'
       />
       {/* Main Content */}
       <div className='product-detail-mainconent'>
